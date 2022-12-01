@@ -1,4 +1,4 @@
-# Instagram_followback-check
+# Instagram Followback Checker
 
 Instagramのフォローバックされていないアカウントを表示し、csvに書き出すプログラム
 <br>

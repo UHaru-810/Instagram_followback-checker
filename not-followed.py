@@ -34,7 +34,7 @@ for elem in list_following:
 del list_diff[0]
 
 # csvファイルに書き込み
-with open('not_followback.csv', 'w') as csv_open:
+with open('not-followed.csv', 'w') as csv_open:
     csv_write = csv.writer(csv_open)
     csv_write.writerow(['ID ', 'URL'])
     csv_write.writerows(list_diff)
@@ -42,8 +42,8 @@ with open('not_followback.csv', 'w') as csv_open:
 #csvファイルを開く(OS別)
 try:
     if os.name == "nt":
-        subprocess.Popen(['open', 'not_followback.csv'], shell=True)
+        subprocess.Popen(['open', 'not-followed.csv'], shell=True)
     elif os.name == "posix":
-        subprocess.Popen(['open', 'not_followback.csv'])
+        subprocess.Popen(['open', 'not-followed.csv'])
 except:
     print("can't open csv file.")

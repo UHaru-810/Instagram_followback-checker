@@ -28,7 +28,7 @@ for elem in list_following:
         # リストに追加
         list_diff.append([elem, url])
         # Chromeでフォローバックされていない各アカウントを表示
-        # webbrowser.get('chrome').open(url, new=0, autoraise=False)
+        webbrowser.get('chrome').open(url, new=0, autoraise=False)
 
 #謎に1つ目の要素が空でできてしまうので削除(おそらくどこかが悪い)
 del list_diff[0]

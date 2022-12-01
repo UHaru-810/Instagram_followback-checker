@@ -32,7 +32,7 @@ for elem in list_following:
 del list_diff[0]
 
 # csvファイルに書き込み
-with open('not-followed.csv', 'w') as csv_open:
+with open('followed.csv', 'w') as csv_open:
     csv_write = csv.writer(csv_open)
     csv_write.writerow(['ID ', 'URL'])
     csv_write.writerows(list_diff)

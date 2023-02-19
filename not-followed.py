@@ -17,7 +17,7 @@ list_diff = [[]]
 # Instagramのユーザーネーム取得
 for json_key_following in json_load_following['relationships_following']:
     list_following.append(json_key_following['string_list_data'][0]['value'])
-for json_key_followers in json_load_followers['relationships_followers']:
+for json_key_followers in json_load_followers:
     list_followers.append(json_key_followers['string_list_data'][0]['value'])
 
 # フォロー中とフォロワーの相違チェック
